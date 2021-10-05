@@ -1,0 +1,79 @@
+#avisos
+print("Esto es un proyecto inicial y por favor no ingiera valores no aceptables")
+print("Los valores aceptables son: ")
+print('Para los operadores o numeros: por favor ingiera numeros, para las operaciones: sumar = "+", restar = "-", multiplicar = "*", dividir = "/"')
+print("Gracias")
+
+
+
+#comencemos con la calculadora
+numero1 = int(input("Operador1:"))#aqui hemos hecho un input para cada numero
+calculo = input('calculo:')#aqui ponemos el input del calculo que quiere hacer
+numero2 = int(input("Operador2:"))#aqui hemos hecho un input para cada numero
+notGood = 0
+#esto comprueba si no has escrito un numero en los operadores
+
+
+
+
+
+
+      
+
+def calcule():
+
+
+
+  if calculo == "+":
+
+       operate = numero1 + numero2
+       print("El resultado es: ", operate)
+    
+    
+  if calculo == "-":
+    operate = numero1 - numero2
+    print("El resultado es: ", operate)
+    
+
+  if calculo == "*":
+    operate = numero1 * numero2
+    print("El resultado es: ", operate)
+    
+
+  if calculo == "/":
+    operate = numero1 / numero2
+    resto =  numero1 // numero2
+    print("El resultado es: ", operate)
+    print("El resto es: ", resto)
+  #esto hara que cuando no escribas algo bien te lo blocke
+  if calculo != "+":
+         if calculo != "-":
+            if calculo != "*":
+               if calculo != "/":
+                   operate = "por favor ingiera un valor aceptable"
+                   print(operate)
+                   calcule()
+
+def isNumber ():
+ if type(numero1) != int:
+    print("por favor ingiera un valor aceptable")
+    calcule()
+       
+ if type(numero2) != int:
+    print("por favor ingiera un valor aceptable")
+    calcule()
+
+calcule()
+isNumber()
+
+
+
+ 
+
+
+
+
+
+        
+
+
